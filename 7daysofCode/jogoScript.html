@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>7DaysOfCode</title>
+
+</head>
+
+<body>
+    <div class="caixa">
+        <h1>Jogo dos Dev's</h1>
+        <p>Esse jogo consiste em perguntas e respostas, sobre sua carreira como DEV.</p>
+        <p>Cada resposta te leva a um caminho diferente no jogo, então escolha com sabedoria.</p>
+
+        <h3>Vamos Começar!!</h3>
+        
+
+        <button type="submit" onclick="click1()"> Qual área pretende seguir? </button>
+        
+        <p id="surpresa"></p>
+
+        <h3 id="botao"></h3>
+    </div>
+    
+
+    <script>
+
+        // function pulaLinha(){
+
+        //     document.write("<br>")
+        // }
+
+        // function mostra (frase) {
+
+        //     document.write(frase);
+        //     pulaLinha();
+        // }
+
+        function escreve () {
+            
+            var resposta = prompt("Qual área pretende seguir?");
+            var texto = document.getElementById('surpresa');
+            var frase = "A área escolhida foi " + resposta;
+            
+
+            
+            
+            if(resposta === "front-end") {
+                tecnologia()
+                texto.innerHTML = frase;
+                
+            }else if(resposta === "back-end"){
+                alert("Qual tecnologia gostaria de aprender?");
+                texto.innerHTML = frase;
+
+            }else {
+                alert("Escolha uma área válida!");
+
+            }
+                
+        }
+        
+        function click1() {
+            
+            alert("Escolha entre Front-End e Back-End");
+            escreve();        
+
+            
+        }
+
+        function escolhe () {
+
+            var = 
+
+        }
+        
+
+        function tecnologia() {
+
+            prompt("Qual tecnologia gostaria de aprender?");
+
+            document.write("<button> Java </button>")
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
